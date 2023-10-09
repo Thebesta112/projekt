@@ -8,7 +8,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 book_containers = soup.find_all("article", class_="product_pod")
 
 for container in  book_containers:
-    title = container.a.span[""]
+    title = container.h1.span[""]
     price = container.select(".a-price-whole")[0].get_text()
     book_link = container.h2.a["href"]
     book_page = requests.get(url + book_link)
