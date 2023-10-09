@@ -31,6 +31,6 @@ by means of typing into the terminal:
 ## Things to do 
 
 <ul>
-  <li>fix the part of the code responsible for outputting the downloaded data OR update new file</li>
+  <li>fix the part of the code responsible for outputting the downloaded data OR update <b>"during..."</b> file</li>
   <li>create a docker image that converts the program to an exe file</li>
 </ul>
