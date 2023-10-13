@@ -17,8 +17,8 @@ def pobranie_danych(produkt):
     baza_wyszuki = driver.find(By.CLASS_NAME, "offer")
 
     for info in baza_wyszuki:
-        title_info = baza_wyszuki.find(By.CSS_SELECTOR, "h2.title")
-        price_info = baza_wyszuki.find(By.CSS_SELECTOR, "span.whole")
+        title_info = info.find(By.CSS_SELECTOR, "h2.title")
+        price_info = info.find(By.CSS_SELECTOR, "span.whole")
         
 
         title = title_info.text.strip()
